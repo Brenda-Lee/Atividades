@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gatos! Gatos!</title>
+</head>
+<body style="background-color:rgb(255, 244,226)">
+    <div>
+    <h1 style="color: #696969">Cabeçalho 01: <span style="color: red;">Notas de Início</h1>
+        <p style="background-color: honeydew">Parágrafo 01: <em>Sempre</em> um prazer escrever <br>
+        tantas linhas quanto essas num exercício. Como uma amante de gatos, inseri aqui informações<br>
+        úteis sobre eles e mais algumas coisinhas. Foi divertido, até o próximo exercício! </p>
+    </div>
+    <div>
+    <h2 style="color: #696969;">Cabeçalho 02: Conteúdo de Verdade</h2>
+        <p style="background-color: honeydew">Parágrafo 02: <i>Como</i> não seguir um exemplo<br>
+        por: <b>Eu mesma</b> <br>
+        Logo aqui em baixo você vai encontrar um link para um site <br>
+        super útil sobre bichanos (<del>nessa fofura de leão-gato!</del>) e abaixo <br>
+        uma tabela que compara a idade dos gatos com a dos seres humanos e por último <br>
+        outro site cheio de informações tanto sobre gatos quanto cachorros. </p>
+    </div>
+    <a href="https://tudosobregatos.com.br/" target="_blank">
+        <img src="cat.gif" alt="gato" style="width:120px;height:120px;border:0">
+    </a>
+    <table>
+        <tr>
+            <th>Estágio de vida</th>
+            <th>Idade do gato</th>
+            <th>Equivalente humano</th>
+        </tr>
+        <tr>
+            <td>Filhote</td>
+            <td>0-6 meses</td>
+            <td>0-10 anos</td>
+        </tr>
+        <tr>
+            <td>Júnior</td>
+            <td>7 meses a 2 anos</td>
+            <td>12-24 anos</td>
+        </tr>
+        <tr>
+            <td>Desenvolvido</td>
+            <td>3-6 anos</td>
+            <td>28-40 anos</td>
+        </tr>
+        <tr>
+            <td>Maduro</td>
+            <td>7-10 anos</td>
+            <td>44-56 anos</td>
+        </tr>
+        <tr>
+            <td>Sênior</td>
+            <td>11-14 anos</td>
+            <td>60-72 anos</td>
+        </tr>
+        <tr>
+            <td>Idoso</td>
+            <td>15-25 anos</td>
+            <td>76-116 anos</td>
+        </tr>
+    </table>
+    <iframe src="http://www.cachorrogato.com.br/" height="200" width="500"></iframe>
+</body>
+</html>
