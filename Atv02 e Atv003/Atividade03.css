@@ -1,0 +1,55 @@
+body {
+    background-image: url(./gradient_bg.png);
+    background-repeat: repeat-x, repeat-y;
+    /* (./gradient_bg.png); */
+}
+h2 {
+    color: aqua;
+}
+h1 {
+    color: cadetblue;
+    font-size: 30px;
+}
+p {
+    text-align: center;
+    color: rgb(138, 43, 226);
+    font-size: 25px;
+    border-style: dotted;
+}
+header {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 1ch;
+    color: cadetblue;
+    font-size: 5pc;
+}
+article {
+    margin: 4vw 2vw 4vw 2vw;
+    padding: 2rem 2rem 2rem 2rem;
+    border-style: double;
+    border-color: blueviolet;
+}
+span {
+    color: rgb(129, 30, 179);
+    font-size: 30px;
+    text-align: center;
+}
+.cadastr {
+    border-color: orange;
+}
+h1.minha-classe {
+    font-size: 30px;
+    color: cadetblue;
+}
+form {
+    border: 2px;
+    border-style: dashed;
+    border-color: orangered;
+}
+.minha-classe {
+    background-color: rgba(179, 179, 199, 0.774);
+}
+
+.draw {
+    border-color: mediumslateblue;
+}

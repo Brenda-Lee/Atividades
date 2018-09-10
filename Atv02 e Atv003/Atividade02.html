@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Blog sobre diferentes tipos de feijão</title>
+    <link rel="stylesheet" type="text/css" href="Atividade03.css">
+    <header>Feijões ao Redor do Mundo</header>
+</head>
+<body>
+    <article class="minha-classe">
+        <span>O feijão é um dos alimentos mais antigos do mundo, cultivado há séculos na Grécia Antiga e no Egito, 
+            existindo relatos sobre o mesmo desde 1000 a.C. Aqui a baixo quatro tipos dessa leguminosa: </span>
+        <section>
+            <h1>
+                Feijão Preto:
+            </h1>
+            <p>
+                O feijão preto... Conhecido como o feijão da feijoada;
+                Possui grãos pequenos e cor preta;
+                Além do Rio de Janeiro, Espírito Santo, Rio Grande do Sul, Santa Catarina e Paraná, 
+                ele também é muito utilizado na culinária Mexicana.
+            </p>
+        </section>
+        <section>
+            <h1>
+                Feijão Branco:
+            </h1>
+            <p>
+                O feijão branco... Este retarda a absorção de açúcar no sangue e ajuda a emagrecer;
+                Seus grãos proporcionam um caldo bem cremoso;
+                Seu formato é alongado e de cor branca;
+                Ótimo para sopas, saladas e cassoulets.
+            </p>
+        </section>
+        <section>
+            <h1>
+                Feijão Carioca:
+            </h1>
+            <p>
+                O feijão carioca... Conhecido também como feijão chilli;
+                Possui formato arredondado de cor bege com listras marrons;
+                Rende bom caldo e cozinha rapidamente;
+                Muito usado na culinária indiana;
+            </p>
+        </section>
+        <section>
+            <h1>
+                Feijão Verde:
+            </h1>
+            <p>
+                O feijão verde... Possui grãos pequenos e verdes;
+                Conhecido como o grão da vagem verde;
+                Ideal para ser consumido fresco ou seco;
+                Muito consumido no Nordeste.
+            </p>
+        </section>
+    </article>
+    <article class="links">
+        <h1>Para mais informações:</h1>
+        <nav>
+            <a href="https://www.bonde.com.br/gastronomia/cursos-e-eventos/conheca-os-diferentes-tipos-de-feijao-e-saiba-como-preparar-cada-um-383902.html">Bonde</a>
+            <a href="https://www.natue.com.br/natuelife/conheca-a-variedade-de-tipos-de-feijao.html">NatueLife</a>
+            <a href="https://blog.tudogostoso.com.br/noticias/tipos-de-feijao/">TudoGostoso</a>
+        </nav>
+    </article>
+    <article class="draw">
+        <h1>Se você não come feijão, acaba assim:</h1>
+        <svg width="800" height="250">
+            <circle cx="50" cy="50" r="40"
+            stroke="black" stroke-width="2" fill="white"/>
+            <!-- body line -->
+            <line x1="50" y1="91" x2="50" y2="180"
+            style="stroke-width:2; stroke:rgb(25,0,0)"/>
+            <!-- right line -->
+            <line x1="50" y1="91" x2="85" y2="135"
+            style="stroke-width:2; stroke:rgb(25,0,0)"/>
+            <!-- left line -->
+            <line x1="50" y1="91" x2="20" y2="135"
+            style="stroke-width:2; stroke:rgb(25,0,0)"/>
+            <!-- bottom-right line -->
+            <line x1="90" y1="240" x2="50" y2="180"
+            style="stroke-width:2; stroke:rgb(25,0,0)"/>
+            <!-- bottom-left line -->
+            <line x1="10" y1="240" x2="50" y2="180"
+            style="stroke-width:2; stroke:rgb(25,0,0)"/>            
+            Seu navegador não suporta SVG inline
+        </svg>
+    </article>
+    <article class="advd">
+        <h1>Alguns vídeos e áudio-tutoriais de como preparar feijão:</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nDnZ5vLUla4"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        Seu navegador não suporta este vídeo.
+        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O0OkM1dQ4oI"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        Seu navegador não suporta este vídeo.
+        </iframe>
+        <audio controls>
+            <source src="cultivoFeij.ogg" type="audio/ogg">
+            <source src="cultivoFeij.mp3" type="audio/mpeg">
+        Seu navegador não suporta esse áudio.
+        </audio>
+    </article>
+    <article class="cadastr">
+        <h1>Cadastre-se no blog e seja um feijão!</h1>
+        <form action="https://www.w3schools.com/action_page.php" method="GET" 
+        target="_blank" accept-charset="utf-8" autocomplete="off" novalidate>
+            <fieldset>
+            <legend>Cadastro:</legend> 
+            Nome de usuário:<br>
+            <input type="text" placeholder="Seu nome" maxlength="15"> <br>
+            Senha: <br>
+            <input type="text" placeholder="******" readonly> <br>
+            Email: <br>
+            <input type="text" placeholder="exemplo@mail.com"> <br>
+            Escolha um número entre 25000 e 30000*: <br>
+            <input type="number" name="num" min="25000" max="30000" maxlength="5"> <br>
+            *Esse será o seu número de usuário.
+            </fieldset>
+            <fieldset>
+                <legend>Add-ons:</legend>
+                Prefere instalar a nossa extensão para receber notícias
+                ou as receber pelo email? <br>
+                <input type="checkbox" name="choice1" value="ext"> Extensão. <br>
+                <input type="checkbox" name="choice2" value="email"> Email. <br>
+                O que acha do blog? <br>
+                <input type="radio" name="nota" value="meh"> Meh
+                <input type="radio" name="nota" value="gostei"> Gostei
+                <input type="radio" name="nota" value="legal"> Legal! <br> <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </article>
+    <footer>
+        <h2>Ipsum Lorem®</h2>
+    </footer>
+</body>
+</html>
