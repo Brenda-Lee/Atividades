@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.display-logo{
+    height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.display-logo h1{
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.navegador-horizontal{
+    height: 40px;
+    background-color:dodgerblue;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.navegador-horizontal ul{
+    list-style-type: none;
+}
+       
+.navegador-horizontal ul li .dropdown-button:hover{
+    background-color: greenyellow;
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown .dropdown-button{
+    font-family: "Georgia", 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.dropdown .dropdown-content{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    background-color:rgba(172, 255, 47, 0.932);
+    display: none;
+    padding: 0 8px;
+}
+
+.navegador ul li a:hover, .dropdown .dropdown-button:hover{
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.conteudo{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.item{
+    text-decoration: none;
+    color: black;
+}
+
+.side-nav{
+    float: left;
+    padding: 0 8px;
+}
+
+.barra{
+    background-color: rgba(95, 158, 160, 0.336);
+    z-index: 3;
+    height: 100%;
+    width: 230px;
+    margin-bottom: -155px;
+    overflow: hidden;
+}
+
+.side-nav ul li a:hover{
+    background-color: rgba(95, 160, 160, 0.829);
+}
+
+.corpo-site{
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
