@@ -1,95 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.display-logo{
-    height: 68px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.display-logo h1{
-    font-family: "Verdana", Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.navegador-horizontal{
-    height: 40px;
-    background-color:dodgerblue;
-    z-index: 4;
-    overflow: hidden;
-}
-
-.navegador-horizontal ul{
-    list-style-type: none;
-}
-       
-.navegador-horizontal ul li .dropdown-button:hover{
-    background-color: greenyellow;
-}
-
-.dropdown{
-    float: left;
-}
-
-.dropdown .dropdown-button{
-    font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-size: 17px;
-    padding: 10px;
-}
-
-.dropdown .dropdown-content{
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    background-color:rgba(172, 255, 47, 0.932);
-    display: none;
-    padding: 0 8px;
-}
-
-.navegador ul li a:hover, .dropdown .dropdown-button:hover{
-    cursor: pointer;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-
-.conteudo{
-    margin-top: 16px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    line-height: 1.5;
-}
-
-.item{
-    text-decoration: none;
-    color: black;
-}
-
-.side-nav{
-    float: left;
-    padding: 0 8px;
-}
-
-.barra{
-    background-color: rgba(95, 158, 160, 0.336);
-    z-index: 3;
-    height: 100%;
-    width: 230px;
-    margin-bottom: -155px;
-    overflow: hidden;
-}
-
-.side-nav ul li a:hover{
-    background-color: rgba(95, 160, 160, 0.829);
-}
-
-.corpo-site{
-    display: flex;
-    align-items: flex-end;
-    flex-flow: row wrap;
-}
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .logo h1{
+            text-align: center;
+        }
+        .navegador-superior{
+            height: 49px;
+            background-color: rgb(139, 51, 9);
+            overflow: hidden;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+        }
+        .navegador-superior ul{
+            list-style-type: none;
+        }
+        .navegador-superior ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: block;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+        .dropdown{
+            float: left;
+        }
+        .dropdown .dropdown-button{
+            padding: 15px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 900ms;
+        }
+        .dropdown .dropdown-content{
+            position: absolute;
+            background-color: rgba(206, 76, 16, 0.856);
+            display: none;
+        }
+        .navegador-superior ul li a:hover, .dropdown .dropdown-button:hover{
+            background-color: rgb(139,51,9);   
+            cursor: pointer;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropdown-button{
+            background-color: rgb(139,51,9);
+            max-height: 200px;   
+        }
+        .menu-lateral{
+            background:linear-gradient(to left top , red, brown);
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+            position: fixed;
+            left: 0;
+            top: 30%;
+            width: 15%;
+        }
+        .menu-lateral li{
+            color: beige;
+        }
+        .menu-direita{
+            background-color: burlywood;
+            margin-top: 5px;
+            right: 0;
+            top: 15%;
+            width: 25%;
+        }
+        .container{
+            width: 75%;
+            height: 100%;
+            background-color: rgb(110, 95, 10);
+        }
+        .quadro{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(lawngreen, lightseagreen);
+        }
+        @keyframes rodando{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(540deg);
+            }
+            100%{
+                transform: rotate(720deg);
+            }
+        }
+        .jogo{
+            animation-name: rodando;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @media screen and (min-width:600px) {
+            .menu-lateral{
+                list-style-type: none;
+                float: left;
+                width: 25%;
+                height: calc(100vh - 50px);
+            }
+            .menu-direita{
+                list-style-type: none;
+                float: right;
+                width: 25%;
+                height: calc(100vh - 50px);
+            }
+            .container {
+                margin-top: 5px;
+                right: 5%;
+                float: left;
+                width: 50%;
+            }
+    }
