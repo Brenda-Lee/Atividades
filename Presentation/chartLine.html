@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../Chart/Chart.min.js"></script>
+</head>
+<body>
+    <canvas id="line-chart" width="100%" height="40%"></canvas>
+<script>
+var ctx = document.getElementById("line-chart").getContext('2d');
+var line_chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["1", "2", "3", "4", "5", "6"],
+        // eixo X
+        datasets: [{
+            label: 'Linha 1',
+            data: [86, 78, 65, 62, 58, 35],
+            // eixo Y
+            borderColor: "#696969",
+            fill: false
+        }, {
+            label: 'Linha 2',
+            data: [15, 23, 38, 44, 59, 80],
+            borderColor: "#8e95a2",
+            fill: false
+        }, {
+            label: 'Linha 3',
+            data: [90, 90, 90, 90, 90, 17],
+            borderColor: '#39ea23',
+            fill: false
+        }
+    ]
+    },
+    options: {
+        title: {
+          display: true,
+          text: '3 linhas dançantes, a terceira caiu'
+        }
+    }
+});
+</script>
+</body>
+</html>
