@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 2000px;
+    width: 100%;
+}
+.container .barra{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(224, 224, 163);
+    display: flex;
+}
+.container .barra .loja{
+    padding-left: 15px;
+    text-align: center;
+    font-style: italic;
+}
+.container .galeria{
+    height: 1920px;
+    width: 100%;
+    background-color: rgb(27, 24, 24);
+    margin: auto;
+    text-align: center;
+}
+.container .galeria .produto{
+    display: inline-block;
+    margin: 20px;
+    cursor:pointer;
+    color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.container .galeria .produto .modal-overlay{
+    width: 100px;
+    height: 0;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms, height 0ms 800ms;
+}
+
+.container .galeria .produto .modal-overlay.active{
+    height: 100px;
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+.modal-overlay .modal{
+    width: 50px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+.modal-overlay .modal .modal-header{
+    padding: 20px;
+    background: rgb(128, 24, 6);
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+.modal-overlay .modal .modal-header h1{
+    float: left;
+}
+
+.modal-overlay .modal .modal-body{
+    background: tomato;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.modal-overlay .modal .modal-header .close{
+    float: right;   
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none; 
+}

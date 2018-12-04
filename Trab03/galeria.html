@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria de Brusinhas</title>
+    <link rel="stylesheet" href="galeria.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="barra">
+            <div class="loja">
+                <h1 class="logo">Loja das <br> Brusinhas</h1>
+            </div>
+            <div class="barra-pesquisa">
+                <!-- <img src="../midia/lupa.png"> -->
+            </div>
+            <div class="user">
+                <!-- Faça seu login -->
+            </div>
+            <div class="cesta-dropdown">
+                <!-- hoover e pointer<img src="../midia/cesta.png"> -->
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            <!-- Compras se tiver -->
+                        </li>
+                    <button class="finish">Finalizar</button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="galeria">
+            <div class="produto">
+                <!-- Produto, ao clique -->
+                <button class="botao-modal">Open there</button>
+                <div class="modal-overlay">
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h1>Product Tittle</h1>
+                            <span class="close"> X </span>
+                        </div>
+                        <div class="modal-body">
+                            Produto <!-- imagem do produto e descrição -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let url = "http://rem-rest-api.herokuapp.com/";
+        var xhr = new XMLHttpRequest()
+        xhr.open("GET", "http://rem-rest-api.herokuapp.com/api/users", true)
+        xhr.withCredentials = true
+        xhr.send()
+        xhr.onload = function() {
+            var data = JSON.parse(xhr.responseText)
+        };
+        function getPost(){
+            let xml = new XMLHttpRequest();
+            let url = "http://rem-rest-api.herokuapp.com/";
+            xml.onreadystatechange = function(){
+                if (xml.readyState == 4);
+            }
+        }
+
+        let botao_modal = document.querySelector(".botao-modal");
+        let modal_overlay = document.querySelector(".modal-overlay");
+        let close = document.querySelector(".modal-overlay .modal .modal-header .close");
+        botao_modal.addEventListener("click", function(){
+            modal_overlay.classList.add("active");
+        });
+        close.addEventListener("click", function(){
+            modal_overlay.classList.remove("active");
+        });
+        window.addEventListener("click", function(){
+            if(event.target==modal_overlay){
+                modal_overlay.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>
